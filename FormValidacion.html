@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>validaciones</title>
+    
+    <script type="text/javascript" src="js/Validaciones.js"></script>
+</head>
+<body>
+	
+		<h1>Formulario Prueba</h1>
+    
+        <form>
+                Fecha: <input type="date" name="fecha" id="fecha"></input>(Obligatorio)<br><br>
+
+                Edad: <input type="number" name="edad" id="edad"></input><br><br>
+
+                Mail: <input type="email" name="mail" id="mail" ></input>(Obligatorio)<br><br>
+
+                Ciudad: <select id="localidad" required>
+                    <option> </option>
+                    <option value="3492-">Rafaela</option>
+                    <option value="341-">Rosario</option>
+                    <option value="342-">Santa Fe</option>
+                    <option value="351-">Cordoba</option>
+                </select>(Obligatorio)<br><br>
+                                
+                Telefono: <input name="tel" id="tel"></input><br><br>
+
+                Foto: <input type="file" name="foto" id="foto" >(Obligatorio)<br><br>
+                
+                <input type="submit" name="validar" id="validar" onclick="return Validar()" value="Validar"></input>
+                
+        
+        </form>
+
+
+
+
+</body>
+</html>
